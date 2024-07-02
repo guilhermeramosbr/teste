@@ -64,7 +64,7 @@ function dados() {
     <p>${dadosPersonagem[4]}</p>
     <p>${dadosPersonagem[5]}</p>
     <button onclick="excluir(${contagem})">excluir</button>
-  </div>`
+  </div> `
     contagem++
   }
 }
