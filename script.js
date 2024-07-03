@@ -19,7 +19,7 @@ function salvarProtagonista() {
   localStorage.setItem('personagens', JSON.stringify(personagens))
 
 
-  div.innerHTML += `<div>
+  div.innerHTML += `<div class="personagem">
     <img src="${dadosPersonagem[0]} " alt="">
     <h2>${dadosPersonagem[1]}</h2>
     <p>${dadosPersonagem[2]}</p>
@@ -56,7 +56,7 @@ function cadastrar() {
 function dados() {
   contagem = 0
   for (const dadosPersonagem of personagens) {
-    div.innerHTML += `<div>
+    div.innerHTML += `<div class="personagem">
     <img src="${dadosPersonagem[0]} " alt="">
     <h2>${dadosPersonagem[1]}</h2>
     <p id="sombra"> nome do heroi: ${dadosPersonagem[2]}</p>
